@@ -1,15 +1,22 @@
-git init//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        double a = 0.58;
+        double b = 0.34;
+        double c = 1.25;
+        double d = -1.89;
+
+        double y = 2 * (Math.sin(a) / Math.acos(-2 * b)) - Math.sqrt(Math.log(c * Math.abs(2 * d)));
+
+        System.out.println("Значение y: " + y);
+
+
     }
 }
+
+//Math.sin(a) — функція для обчислення синуса.
+//Math.acos(-2 * b) — функція для обчислення арккосинуса.
+//Math.abs(2 * d) — модуль числа.
+//Math.log(x) — функція для обчислення натурального логарифма.
+//Math.sqrt(x) — квадратний корінь.
