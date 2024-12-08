@@ -1,12 +1,8 @@
+package lab4;
+
 import java.util.Arrays;
 
 public class Lab4 {
-
-    public static void main(String[] args) {
-        task1();
-        task2();
-        task3();
-    }
 
     private static void task1() {
         int[] masiv = {23, 535, 21, 52, 2, 8, 60};
