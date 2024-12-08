@@ -2,12 +2,6 @@ package lab3;
 
 public class Lab3 {
 
-    public static void main(String[] args) {
-        task1();
-        task2();
-        task3();
-    }
-
     private static void task2() {
         int t = 5;
         int l = 4;
