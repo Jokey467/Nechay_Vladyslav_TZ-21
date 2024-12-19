@@ -1,19 +1,21 @@
-package lab10;
+package lab8;
 
-import java.util.List;
+import lab7.Students;
+
+import java.util.Set;
 
 public class Faculty {
 
-    private final List<Students> students;
+    private final Set<Students> students;
     private final String name;
 
-    public Faculty(String name, List<Students> students) {
+    public Faculty(String name, Set<Students> students) {
         this.students = students;
         this.name = name;
     }
 
 
-    public List<Students> getStudents() {
+    public Set<Students> getStudents() {
         return students;
     }
 

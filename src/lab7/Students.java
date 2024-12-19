@@ -1,4 +1,4 @@
-package lab10;
+package lab7;
 
 public class Students {
 

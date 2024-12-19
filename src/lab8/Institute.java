@@ -1,22 +1,26 @@
-package lab10;
+package lab8;
+
+import lab7.Faculty;
+import lab7.Students;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Institute {
 
-    private final List<Faculty> faculties;
+    private final Set<Faculty> faculties;
     private final String name;
 
-    public Institute(String name, List<Faculty> faculties) {
+    public Institute(String name, Set<Faculty> faculties) {
         this.faculties = faculties;
         this.name = name;
     }
 
     public int getStudentsCount() {
-        List<Students> list = new ArrayList<>();
-        for (Faculty faculty : faculties) {
+        Set<Students> list = new HashSet<>();
+        for (lab7.Faculty faculty : faculties) {
             list.addAll(faculty.getStudents());
         }
         int count = list.size();
@@ -24,10 +28,10 @@ public class Institute {
         return count;
     }
 
-    public Faculty getTheFacultyWithTheMostStudents() {
+    public lab7.Faculty getTheFacultyWithTheMostStudents() {
         int maxStudents = 0;
-        Faculty faculty = null;
-        for (Faculty faculty1 : faculties) {
+        lab7.Faculty faculty = null;
+        for (lab7.Faculty faculty1 : faculties) {
             int students = faculty1.getStudents().size();
             if (students > maxStudents) {
                 maxStudents = students;
