@@ -9,4 +9,8 @@ public class Lab1 {
         double y = 2 * (Math.sin(a) / Math.acos(-2 * b)) - Math.sqrt(Math.log(c * Math.abs(2 * d)));
         System.out.println("y: " + y);
     }
+
+    public static void main(String[] args) {
+        task1();
+    }
 }

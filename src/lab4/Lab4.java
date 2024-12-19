@@ -31,9 +31,14 @@ public class Lab4 {
         int[] masiv = {6, 98, 67, 3, 6, 3535, 78};
         int dilnik = Arrays.stream(masiv).min().getAsInt();
         for (int i = 0; i < masiv.length; i++) {
-            int num = masiv[i];
-            masiv[i] = num / dilnik;
+            masiv[i] /= dilnik;
         }
-        System.out.println("ddd" + Arrays.toString(masiv));
+        System.out.println("Новий масив: " + Arrays.toString(masiv));
+    }
+
+    public static void main(String[] args) {
+        task1();
+        task2();
+        task3();
     }
 }

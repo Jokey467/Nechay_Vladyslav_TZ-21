@@ -1,11 +1,11 @@
 package lab7;
 
-public class Students {
+public class Students1 {
 
     private final String name;
     private final int number, point;
 
-    public Students(String name, int number, int point) {
+    public Students1(String name, int number, int point) {
         this.number = number;
         this.point = point;
         this.name = name;

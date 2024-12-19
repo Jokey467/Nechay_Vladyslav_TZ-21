@@ -11,7 +11,7 @@ public class Lab3 {
                 sum += Math.sqrt(t * l);
             } else sum += l / Math.sqrt(t);
         }
-        System.out.println(sum);
+        System.out.println("Сума: " + sum);
     }
 
     private static void task1() {
@@ -37,6 +37,12 @@ public class Lab3 {
             i++;
         }
         System.out.println("Сума нескінченної серії з точністю epsilon: " + sum);
+    }
+
+    public static void main(String[] args) {
+        task1();
+        task2();
+        task3();
     }
 
 }

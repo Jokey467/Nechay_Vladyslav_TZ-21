@@ -10,4 +10,9 @@ public class Lab6 {
         String[] words = s.split(" ");
         return words.length;
     }
+
+    public static void main(String[] args) {
+        System.out.println(hexStringToInt("15"));
+        System.out.println(countWordsInString("laba nomer shist"));
+    }
 }

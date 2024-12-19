@@ -29,4 +29,8 @@ public class Lab2 {
         double y3 = Math.sqrt(Math.tan(a3)) / (2 - Math.sinh(b3) / Math.log(Math.abs(d3 + c3)));
         System.out.println("Результат виразу 3: " + y3);
     }
+
+    public static void main(String[] args) {
+        task1();
+    }
 }
