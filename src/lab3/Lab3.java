@@ -2,6 +2,16 @@ package lab3;
 
 public class Lab3 {
 
+    private static void task1() {
+        int k = 30;
+        double m = 1.5;
+        double sum = 0;
+        for (int i = 1; i <= k; i++) {
+            sum += Math.sqrt(m / i) * Math.sin(m * i);
+        }
+        System.out.println("Сума ряду: " + sum);
+    }
+
     private static void task2() {
         int t = 5;
         int l = 4;
@@ -12,16 +22,6 @@ public class Lab3 {
             } else sum += l / Math.sqrt(t);
         }
         System.out.println("Сума: " + sum);
-    }
-
-    private static void task1() {
-        int k = 30;
-        double m = 1.5;
-        double sum = 0;
-        for (int i = 1; i <= k; i++) {
-            sum += Math.sqrt(m / i) * Math.sin(m * i);
-        }
-        System.out.println("Сума ряду: " + sum);
     }
 
     private static void task3() {
@@ -36,7 +36,7 @@ public class Lab3 {
             sum += term;
             i++;
         }
-        System.out.println("Сума нескінченної серії з точністю epsilon: " + sum);
+        System.out.println("Сума серії з точністю epsilon: " + sum);
     }
 
     public static void main(String[] args) {

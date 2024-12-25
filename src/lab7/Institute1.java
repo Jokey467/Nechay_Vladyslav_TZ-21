@@ -16,8 +16,7 @@ public class Institute1 {
     public int getStudentsCount() {
         int total = 0;
         for (Faculty1 faculty : faculties) {
-            int facStudents = faculty.getStudents().size();
-            total += facStudents;
+            total += faculty.getStudents().size();
         }
         return total;
     }
@@ -38,10 +37,10 @@ public class Institute1 {
     public List<Students1> getExcellentStudents() {
         List<Students1> excellentStudents = new ArrayList<>();
         for (Faculty1 faculty : faculties) {
-            for (Students1 students : faculty.getStudents()) {
-                int point = students.getPoint();
+            for (Students1 student : faculty.getStudents()) {
+                int point = student.getPoint();
                 if (point >= 95) {
-                    excellentStudents.add(students);
+                    excellentStudents.add(student);
                 }
             }
         }

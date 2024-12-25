@@ -1,8 +1,12 @@
-package lab5;
-
 import java.util.Arrays;
 
-public class Lab5 {
+public class Test {
+
+    public static void main(String[] args) {
+        byte[] arr = new byte[] {13, 0, -23, 100};
+        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(bubbleSort(arr)));
+    }
 
     public static byte[] bubbleSort(byte[] arr) {
         int n = arr.length;
@@ -17,6 +21,4 @@ public class Lab5 {
         }
         return arr;
     }
-
-
 }

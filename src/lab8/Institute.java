@@ -74,11 +74,11 @@ public class Institute {
         List<Students1> excellentStudents = institute.getExcellentStudents();
         System.out.println("Список відмінників:");
         for (Students1 excellent : excellentStudents) {
-            System.out.println(excellent.getName() + " бал: " + excellent.getPoint());
+            System.out.println(excellent.getName() + " бал " + excellent.getPoint());
         }
         institute.putFacultyAndStudents();
         for (Map.Entry<Faculty, Integer> entry : institute.facultyAndStudents.entrySet()) {
-            System.out.println("Факультет: " + entry.getKey().getName() + " та кількість його студентів: " + entry.getValue());
+            System.out.println("Факультет " + entry.getKey().getName() + " та кількість його студентів " + entry.getValue());
         }
     }
 }

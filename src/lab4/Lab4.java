@@ -36,9 +36,5 @@ public class Lab4 {
         System.out.println("Новий масив: " + Arrays.toString(masiv));
     }
 
-    public static void main(String[] args) {
-        task1();
-        task2();
-        task3();
-    }
+
 }
